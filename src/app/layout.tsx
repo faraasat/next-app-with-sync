@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import StoreProvider from "@/redux/store-provider";
+import { PersisterProvider } from "@/redux/persistor-provider";
 
 import "./globals.css";
 
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <StoreProvider>{children}</StoreProvider>
+        <StoreProvider>
+          <PersisterProvider>{children}</PersisterProvider>
+        </StoreProvider>
       </body>
     </html>
   );
