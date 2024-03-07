@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next App with Sync
 
-## Getting Started
+### This Example Code is a Part of an Article: Syncing Tabs in Next.js 13+ using Redux Toolkit & Redux State Sync — Simple Guide
 
-First, run the development server:
+<hr />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##### Live Url: [Deployment](https://next-app-with-sync.vercel.app)
+##### Article Link: [Medium](https://faraasat.medium.com/syncing-tabs-in-next-js-13-using-redux-toolkit-redux-state-sync-simple-guide-f953329c6beb)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<hr />
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Overview: 
+In this article, we explore how to synchronize data between different browser tabs in a Next.js application using Redux State Sync. The need for such synchronization arises in dynamic web apps, especially in scenarios like e-commerce where maintaining a consistent state across multiple tabs is crucial.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Tutorial Highlights:
 
-## Learn More
+#### 1. Initialize Your Next.js App:
+- Begin by creating a new Next.js project using the command `npx create-next-app@latest`.
+- Customize your project by choosing options like TypeScript, ESLint, Tailwind CSS, and more.
+- If you already have an existing Next.js project, proceed to the next step.
+#### 2. Add Redux Toolkit to Your Project:
+- If you haven’t set up Redux yet, install it using `npm install react-redux @reduxjs/toolkit`.
+- Integrate Redux-State-Sync and Redux-Persist:
+- Install the necessary packages with `npm install redux-state-sync redux-persist @types/redux-state-sync`.
+- These libraries help manage state synchronization across tabs and enable persistence.
+#### 3. Build a Counter App Skeleton:
+- Create a basic skeleton for a counter app.
+- Update the code in app/page.tsx to include a simple counter component.
+- Remove default styling from app/global.css.
+#### 4. Counter Component and Buttons:
+- Define a counter component (CounterComponent) that displays the current count.
+- Implement buttons for incrementing and decrementing the counter.
+- The goal is to demonstrate state synchronization across multiple tabs.
+#### 5. Testing the Sync:
+- Open the app in multiple tabs and observe how the state remains consistent.
+- When one tab modifies the counter, the change reflects in all other open tabs.
 
-To learn more about Next.js, take a look at the following resources:
+### Conclusion: 
+By following this straightforward guide, you can easily achieve tab synchronization using Redux State Sync in your Next.js applications. Whether you’re building e-commerce platforms or other dynamic web apps, this approach ensures a seamless user experience across different browser tabs1.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Result:
+![1_9us5vS3SLbmiiTKgSYBmnQ](https://github.com/faraasat/next-app-with-sync/assets/63093876/52352680-b0ba-4ac4-958f-dec26ed54740)
